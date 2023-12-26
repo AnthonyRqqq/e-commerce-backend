@@ -14,7 +14,7 @@ Tag.init(
     },
 
     tag_name: {
-      tpye: DataTypes.STRING
+      type: DataTypes.STRING
     }
   },
   {

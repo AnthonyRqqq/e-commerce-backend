@@ -36,7 +36,6 @@ router.post('/', async (req, res) => {
   try {
     const tagData = await Tag.create(
       {
-        id: req.body.id,
         tag_name: req.body.tag_name
       }
     );
@@ -52,7 +51,6 @@ router.put('/:id', async (req, res) => {
   try {
     const tagData = await Tag.update(
       {
-        id: req.body.id,
         tag_name: req.body.tag_name
       },
       {
